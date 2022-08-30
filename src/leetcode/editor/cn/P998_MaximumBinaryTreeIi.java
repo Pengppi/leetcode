@@ -49,9 +49,9 @@ public class P998_MaximumBinaryTreeIi {
      */
 
     class Solution {
-        public TreeNode insertIntoMaxTree(TreeNode root, int val) {
-
+        public TreeNode insertIntoMaxTree(TreeNode root, int val)
             return null;
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

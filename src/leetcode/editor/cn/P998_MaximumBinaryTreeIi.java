@@ -5,6 +5,10 @@
  */
 package leetcode.editor.cn;
 
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class P998_MaximumBinaryTreeIi {
     public static void main(String[] args) {
         //测试代码
@@ -49,10 +53,41 @@ public class P998_MaximumBinaryTreeIi {
      */
 
     class Solution {
-        public TreeNode insertIntoMaxTree(TreeNode root, int val)
-            return null;
+        List<Integer> list = new ArrayList<>();
 
+        public TreeNode insertIntoMaxTree(TreeNode root, int val) {
+            dfs(root);
+            list.add(val);
+            return generate(list, 0, list.size() - 1);
         }
+
+        private void dfs(TreeNode root) {
+            if (root.left != null) {
+                dfs(root.left);
+            }
+            list.add(root.val);
+            if (root.right != null) {
+                dfs(root.right);
+            }
+        }
+
+        public TreeNode generate(List<Integer> list, int start, int end) {
+            if (start > end) {
+                return null;
+            }
+            int mx = start;
+            for (int i = start + 1; i <= end; i++) {
+                if (list.get(i) > list.get(mx)) {
+                    mx = i;
+                }
+            }
+            TreeNode root = new TreeNode(list.get(mx));
+            root.left = generate(list, start, mx - 1);
+            root.right = generate(list, mx + 1, end);
+            return root;
+        }
+
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

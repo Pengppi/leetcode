@@ -36,3 +36,4 @@ log/
 *.pid
 *.orig
 temp/
+test/

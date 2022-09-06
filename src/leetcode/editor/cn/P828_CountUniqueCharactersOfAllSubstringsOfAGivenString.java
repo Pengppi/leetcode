@@ -42,8 +42,6 @@ public class P828_CountUniqueCharactersOfAllSubstringsOfAGivenString {
             }
             return ans;
         }
-
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

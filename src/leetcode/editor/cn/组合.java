@@ -1,37 +1,40 @@
 /**
- * @Title: 组合
+ * @Title: 77.组合
+ * @TitleSlug: Combinations
  * @Author: Neo
- * @Date: 2022-09-01 10:56:42
+ * @Date: 2022-10-21 00:46:50
  */
 package leetcode.editor.cn;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class P77_Combinations {
+public class 组合 {
     public static void main(String[] args) {
         //测试代码
-        Solution solution = new P77_Combinations().new Solution();
+        Solution solution = new 组合().new Solution();
     }
 
     //力扣代码
 //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        List<List<Integer>> ans;
+
         public List<List<Integer>> combine(int n, int k) {
-            List<List<Integer>> ans = new ArrayList<>();
-            dfs(ans, new ArrayList<>(), 1, n, k);
+            ans = new ArrayList<>();
+            dfs(n, k, 1, new ArrayList<>());
             return ans;
         }
 
-        private void dfs(List<List<Integer>> ans, ArrayList<Integer> cur, int i, int n, int k) {
-            if (cur.size() == k) {
-                ans.add(new ArrayList<>(cur));
+        private void dfs(int n, int k, int i, ArrayList<Integer> list) {
+            if (list.size() == k) {
+                ans.add(new ArrayList<>(list));
                 return;
             }
             for (int j = i; j <= n; j++) {
-                cur.add(j);
-                dfs(ans, cur, j + 1, n, k);
-                cur.remove(cur.size() - 1);
+                list.add(j);
+                dfs(n, k, j + 1, list);
+                list.remove(list.size() - 1);
             }
         }
     }

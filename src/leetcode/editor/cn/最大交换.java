@@ -1,22 +1,22 @@
 /**
- * @Title: 最大交换
+ * @Title: 670.最大交换
+ * @TitleSlug: MaximumSwap
  * @Author: Neo
- * @Date: 2022-09-13 16:43:31
+ * @Date: 2022-10-28 14:44:44
  */
 package leetcode.editor.cn;
 
-public class P670_MaximumSwap {
+public class 最大交换 {
     public static void main(String[] args) {
         //测试代码
-        Solution solution = new P670_MaximumSwap().new Solution();
+        Solution solution = new 最大交换().new Solution();
     }
 
     //力扣代码
 //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maximumSwap(int num) {
-            String str = String.valueOf(num);
-            char[] cs = str.toCharArray();
+            char[] cs = String.valueOf(num).toCharArray();
             int n = cs.length;
             int mx = n - 1;
             int i1 = -1, i2 = -1;
@@ -32,9 +32,8 @@ public class P670_MaximumSwap {
                 char t = cs[i1];
                 cs[i1] = cs[i2];
                 cs[i2] = t;
-                return Integer.parseInt(new String(cs));
             }
-            return num;
+            return Integer.parseInt(new String(cs));
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -1,0 +1,33 @@
+    class Solution {
+        public boolean canMeasureWater(int jug1Capacity, int jug2Capacity, int targetCapacity) {
+            Deque<int[]> d = new ArrayDeque<>();
+            d.addFirst(new int[]{0, 0});
+            Set<Long> seen = new HashSet<>();
+            while (!d.isEmpty()) {
+                int t[] = d.pollFirst();
+                if (seen.contains(hash(t))) {
+                    continue;
+                }
+                seen.add(hash(t));
+                int x = t[0], y = t[1];
+                if (x == targetCapacity || y == targetCapacity || x + y == targetCapacity) {
+                    return true;
+                }
+                d.addFirst(new int[]{0, y});
+                d.addFirst(new int[]{x, 0});
+                d.addFirst(new int[]{jug1Capacity, y});
+                d.addFirst(new int[]{x, jug2Capacity});
+                d.addFirst(new int[]{x - Math.min(x, jug2Capacity - y), y + Math.min(x, jug2Capacity - y)});
+                d.addFirst(new int[]{x + Math.min(y, jug1Capacity - x), y - Math.min(y, jug1Capacity - x)});
+            }
+            return false;
+        }
+
+        public long hash(int s[]) {
+            return (long) s[0] * 1000001 + s[1];
+        }
+
+    }
+
+//runtime:502 ms
+//memory:178.1 MB

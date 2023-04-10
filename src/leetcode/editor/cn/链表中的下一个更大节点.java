@@ -43,7 +43,6 @@ class Solution {
             i++;
             cur = cur.next;
         }
-        Arrays.
         return Arrays.copyOf(a, i);
     }
 }

@@ -11,7 +11,6 @@ public class 分割两个字符串得到回文串 {
         //测试代码
         Solution solution = new 分割两个字符串得到回文串().new Solution();
     }
-}
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -47,3 +46,4 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+}

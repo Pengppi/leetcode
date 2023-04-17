@@ -11,14 +11,14 @@ public class 温度转换 {
         //测试代码
         Solution solution = new 温度转换().new Solution();
     }
-}
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public double[] convertTemperature(double celsius) {
-        double kelvin = celsius + 273.15;
-        double fahrenheit = celsius * 1.80 + 32.00;
-        return new double[]{kelvin, fahrenheit};
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public double[] convertTemperature(double celsius) {
+            double kelvin = celsius + 273.15;
+            double fahrenheit = celsius * 1.80 + 32.00;
+            return new double[]{kelvin, fahrenheit};
+        }
     }
+    //leetcode submit region end(Prohibit modification and deletion)
 }
-//leetcode submit region end(Prohibit modification and deletion)

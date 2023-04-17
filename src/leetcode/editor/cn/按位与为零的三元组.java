@@ -11,26 +11,26 @@ public class 按位与为零的三元组 {
         //测试代码
         Solution solution = new 按位与为零的三元组().new Solution();
     }
-}
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int countTriplets(int[] nums) {
-        int[] cnt = new int[1 << 16];
-        for (int i : nums) {
-            for (int j : nums) {
-                cnt[i & j]++;
-            }
-        }
-        int ans = 0;
-        for (int i = 0; i < 1 << 16; i++) {
-            for (int k : nums) {
-                if ((i & k) == 0) {
-                    ans += cnt[i];
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int countTriplets(int[] nums) {
+            int[] cnt = new int[1 << 16];
+            for (int i : nums) {
+                for (int j : nums) {
+                    cnt[i & j]++;
                 }
             }
+            int ans = 0;
+            for (int i = 0; i < 1 << 16; i++) {
+                for (int k : nums) {
+                    if ((i & k) == 0) {
+                        ans += cnt[i];
+                    }
+                }
+            }
+            return ans;
         }
-        return ans;
     }
+    //leetcode submit region end(Prohibit modification and deletion)
 }
-//leetcode submit region end(Prohibit modification and deletion)

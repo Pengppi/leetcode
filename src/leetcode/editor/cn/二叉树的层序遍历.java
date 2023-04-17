@@ -18,8 +18,8 @@ public class 二叉树的层序遍历 {
         Solution solution = new 二叉树的层序遍历().new Solution();
     }
 
-//力扣代码
-//leetcode submit region begin(Prohibit modification and deletion)
+    //力扣代码
+    //leetcode submit region begin(Prohibit modification and deletion)
 
     /**
      * Definition for a binary tree node.
@@ -60,6 +60,25 @@ public class 二叉树的层序遍历 {
             return ans;
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
+
+    //leetcode submit region end(Prohibit modification and deletion)
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
 
 }

@@ -12,6 +12,10 @@ public class 统计共同度过的日子数 {
     public static void main(String[] args) {
         //测试代码
         Solution solution = new 统计共同度过的日子数().new Solution();
+        solution.countDaysTogether("10-01",
+                "10-31",
+                "11-01",
+                "12-31");
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -11,7 +11,6 @@ public class 删除最短的子数组使剩余数组有序 {
         //测试代码
         Solution solution = new 删除最短的子数组使剩余数组有序().new Solution();
     }
-}
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -38,3 +37,4 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+}

@@ -11,18 +11,18 @@ public class 和相等的子数组 {
         //测试代码
         Solution solution = new 和相等的子数组().new Solution();
     }
-}
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public boolean findSubarrays(int[] nums) {
-        Set<Integer> set = new HashSet<>();
-        for (int i = 1; i < nums.length; i++) {
-            if (!set.add(nums[i] + nums[i - 1])) {
-                return true;
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public boolean findSubarrays(int[] nums) {
+            Set<Integer> set = new HashSet<>();
+            for (int i = 1; i < nums.length; i++) {
+                if (!set.add(nums[i] + nums[i - 1])) {
+                    return true;
+                }
             }
+            return false;
         }
-        return false;
     }
+    //leetcode submit region end(Prohibit modification and deletion)
 }
-//leetcode submit region end(Prohibit modification and deletion)

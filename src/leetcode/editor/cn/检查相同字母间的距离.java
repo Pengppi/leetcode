@@ -13,23 +13,23 @@ public class 检查相同字母间的距离 {
         //测试代码
         Solution solution = new 检查相同字母间的距离().new Solution();
     }
-}
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public boolean checkDistances(String s, int[] distance) {
-        int n = s.length();
-        Set<Character> set = new HashSet<>();
-        for (int i = 0; i < n; i++) {
-            char c = s.charAt(i);
-            if (set.add(c)) {
-                int pos = i + distance[c - 'a'] + 1;
-                if (pos >= n || s.charAt(pos) != c) {
-                    return false;
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public boolean checkDistances(String s, int[] distance) {
+            int n = s.length();
+            Set<Character> set = new HashSet<>();
+            for (int i = 0; i < n; i++) {
+                char c = s.charAt(i);
+                if (set.add(c)) {
+                    int pos = i + distance[c - 'a'] + 1;
+                    if (pos >= n || s.charAt(pos) != c) {
+                        return false;
+                    }
                 }
             }
+            return true;
         }
-        return true;
     }
+    //leetcode submit region end(Prohibit modification and deletion)
 }
-//leetcode submit region end(Prohibit modification and deletion)

@@ -50,4 +50,4 @@
  <li><code>1 &lt;= p &lt;= 10<sup>9</sup></code></li> 
 </ul>
 
-<div><div>Related Topics</div><div><li>数组</li><li>哈希表</li><li>前缀和</li></div></div><br><div><li>👍 129</li><li>👎 0</li></div>
+<div><li>👍 217</li><li>👎 0</li></div>

@@ -11,23 +11,23 @@ public class 段式回文 {
         //测试代码
         Solution solution = new 段式回文().new Solution();
     }
-}
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int longestDecomposition(String text) {
-        int n = text.length();
-        if (n == 0) {
-            return 0;
-        }
-        for (int i = 1; i <= n / 2; i++) {
-            if (text.substring(0, i).equals(text.substring(n - i))) {
-                return 2 + longestDecomposition(text.substring(i, n - i));
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int longestDecomposition(String text) {
+            int n = text.length();
+            if (n == 0) {
+                return 0;
             }
+            for (int i = 1; i <= n / 2; i++) {
+                if (text.substring(0, i).equals(text.substring(n - i))) {
+                    return 2 + longestDecomposition(text.substring(i, n - i));
+                }
+            }
+            return 1;
         }
-        return 1;
+
+
     }
-
-
+    //leetcode submit region end(Prohibit modification and deletion)
 }
-//leetcode submit region end(Prohibit modification and deletion)

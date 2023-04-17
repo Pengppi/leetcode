@@ -14,7 +14,6 @@ public class 合并石头的最低成本 {
         //测试代码
         Solution solution = new 合并石头的最低成本().new Solution();
     }
-}
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -59,3 +58,4 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+}

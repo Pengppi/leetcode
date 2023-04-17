@@ -8,10 +8,10 @@ package leetcode.editor.cn;
 
 import java.util.Arrays;
 
-public class 移动石子直到连续 II {
+public class 移动石子直到连续II {
     public static void main(String[] args) {
         //测试代码
-        Solution solution = new 移动石子直到连续 II().new Solution();
+        Solution solution = new Solution();
     }
 }
 

@@ -6,12 +6,12 @@
  */
 package leetcode.editor.cn;
 
-public class 至少有 1位重复的数字{
-public static void main(String[]args){
+public class 至少有1位重复的数字 {
+    public static void main(String[] args) {
         //测试代码
-        Solution solution=new 至少有 1位重复的数字().new Solution();
-        }
-        }
+        Solution solution = new Solution();
+    }
+}
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {

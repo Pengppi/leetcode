@@ -8,10 +8,10 @@ package leetcode.editor.cn;
 
 import java.util.*;
 
-public class 花括号展开 II {
+public class 花括号展开II {
     public static void main(String[] args) {
         //测试代码
-        Solution solution = new 花括号展开 II().new Solution();
+        Solution solution = new Solution();
     }
 }
 

@@ -9,12 +9,11 @@ package leetcode.editor.cn;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 使数组和能被 P 整除 {
+public class 使数组和能被P整除 {
     public static void main(String[] args) {
         //测试代码
-        Solution solution = new 使数组和能被 P 整除 ().new Solution();
+        Solution solution = new 使数组和能被P整除().new Solution();
     }
-}
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -39,3 +38,4 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+}

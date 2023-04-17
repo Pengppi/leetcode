@@ -6,10 +6,10 @@
  */
 package leetcode.editor.cn;
 
-public class 得到 K 个黑块的最少涂色次数 {
+public class 得到K个黑块的最少涂色次数 {
     public static void main(String[] args) {
         //测试代码
-        Solution solution = new 得到 K 个黑块的最少涂色次数 ().new Solution();
+        Solution solution = new Solution();
     }
 }
 

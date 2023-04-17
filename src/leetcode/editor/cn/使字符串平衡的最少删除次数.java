@@ -11,7 +11,6 @@ public class 使字符串平衡的最少删除次数 {
         //测试代码
         Solution solution = new 使字符串平衡的最少删除次数().new Solution();
     }
-}
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -28,3 +27,4 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+}

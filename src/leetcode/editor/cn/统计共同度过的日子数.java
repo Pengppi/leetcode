@@ -6,7 +6,6 @@
  */
 package leetcode.editor.cn;
 
-import com.sun.xml.internal.ws.util.StringUtils;
 
 public class 统计共同度过的日子数 {
     public static void main(String[] args) {
